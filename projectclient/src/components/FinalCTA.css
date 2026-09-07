@@ -1,0 +1,121 @@
+.final-cta {
+  position: relative;
+  overflow: hidden;
+  padding: var(--spacing-4xl) 0;
+  background: var(--bg-white);
+}
+
+.final-cta__decor {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(100px);
+  pointer-events: none;
+  opacity: 0.15;
+}
+
+.final-cta__decor--1 {
+  width: 500px;
+  height: 500px;
+  background: var(--primary);
+  top: -150px;
+  left: 10%;
+}
+
+.final-cta__decor--2 {
+  width: 450px;
+  height: 450px;
+  background: var(--secondary);
+  bottom: -150px;
+  right: 10%;
+}
+
+.final-cta__card {
+  position: relative;
+  background: linear-gradient(135deg, #1E1B4B 0%, #312E81 50%, #1E3A8A 100%);
+  border-radius: var(--radius-xl);
+  padding: var(--spacing-4xl) var(--spacing-2xl);
+  text-align: center;
+  color: var(--text-white);
+  box-shadow: 0 25px 50px -12px rgba(30, 27, 75, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  overflow: hidden;
+}
+
+.final-cta__badge {
+  display: inline-block;
+  padding: 6px 16px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: var(--radius-full);
+  font-size: var(--font-size-xs);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--primary-light);
+  margin-bottom: var(--spacing-lg);
+}
+
+.final-cta__heading {
+  font-size: var(--font-size-5xl);
+  font-weight: 800;
+  color: var(--text-white);
+  max-width: 800px;
+  margin: 0 auto var(--spacing-md);
+  line-height: 1.15;
+  letter-spacing: -1px;
+}
+
+.final-cta__description {
+  font-size: var(--font-size-lg);
+  color: rgba(255, 255, 255, 0.85);
+  max-width: 600px;
+  margin: 0 auto var(--spacing-2xl);
+}
+
+.final-cta__buttons {
+  display: flex;
+  gap: var(--spacing-md);
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: var(--spacing-lg);
+}
+
+.final-cta__btn-primary {
+  background: var(--text-white);
+  color: var(--primary-dark);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.final-cta__btn-primary:hover {
+  background: #f8fafc;
+  color: var(--primary);
+  transform: translateY(-2px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+}
+
+.final-cta__note {
+  font-size: var(--font-size-xs);
+  color: rgba(255, 255, 255, 0.6);
+}
+
+@media (max-width: 768px) {
+  .final-cta__card {
+    padding: var(--spacing-2xl) var(--spacing-md);
+  }
+
+  .final-cta__heading {
+    font-size: var(--font-size-3xl);
+  }
+
+  .final-cta__description {
+    font-size: var(--font-size-base);
+  }
+
+  .final-cta__buttons {
+    flex-direction: column;
+  }
+
+  .final-cta__buttons .btn {
+    width: 100%;
+  }
+}

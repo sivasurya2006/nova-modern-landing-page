@@ -1,0 +1,115 @@
+.pricing-card {
+  background: var(--bg-white);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-xl);
+  text-align: center;
+  position: relative;
+  transition: all var(--transition-base);
+  display: flex;
+  flex-direction: column;
+}
+
+.pricing-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+}
+
+/* Popular card */
+.pricing-card--popular {
+  border-color: var(--primary);
+  box-shadow: 0 8px 30px rgba(79, 70, 229, 0.15);
+  transform: scale(1.03);
+}
+
+.pricing-card--popular:hover {
+  transform: scale(1.03) translateY(-4px);
+  box-shadow: 0 12px 40px rgba(79, 70, 229, 0.2);
+}
+
+.pricing-card__badge {
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--accent-gradient);
+  color: var(--text-white);
+  padding: 4px 20px;
+  border-radius: var(--radius-full);
+  font-size: var(--font-size-xs);
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.pricing-card__name {
+  font-size: var(--font-size-xl);
+  font-weight: 700;
+  color: var(--text-dark);
+  margin-bottom: var(--spacing-xs);
+}
+
+.pricing-card__description {
+  font-size: var(--font-size-sm);
+  color: var(--text-light);
+  margin-bottom: var(--spacing-lg);
+}
+
+.pricing-card__price {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: 2px;
+  margin-bottom: var(--spacing-sm);
+}
+
+.pricing-card__currency {
+  font-size: var(--font-size-xl);
+  font-weight: 700;
+  color: var(--text-dark);
+}
+
+.pricing-card__amount {
+  font-size: var(--font-size-5xl);
+  font-weight: 800;
+  color: var(--text-dark);
+  line-height: 1;
+}
+
+.pricing-card__period {
+  font-size: var(--font-size-sm);
+  color: var(--text-light);
+  font-weight: 500;
+}
+
+.pricing-card__savings {
+  font-size: var(--font-size-xs);
+  color: var(--success);
+  font-weight: 600;
+  margin-bottom: var(--spacing-md);
+}
+
+.pricing-card__features {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+  margin-bottom: var(--spacing-xl);
+  text-align: left;
+  flex: 1;
+}
+
+.pricing-card__feature {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  font-size: var(--font-size-sm);
+  color: var(--text-body);
+}
+
+.pricing-card__feature svg {
+  flex-shrink: 0;
+}
+
+.pricing-card__cta {
+  width: 100%;
+  margin-top: auto;
+}
