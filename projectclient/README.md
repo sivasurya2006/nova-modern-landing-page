@@ -179,7 +179,7 @@ The application is rigorously optimized across modern device breakpoints:
 
 ## Live Demo
 
-Live Demo: [Add deployment URL]
+Live Demo: [https://nova-modern-landing-page.vercel.app/]
 
 ---
 
